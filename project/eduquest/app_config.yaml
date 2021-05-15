@@ -2,7 +2,7 @@ backend_host_port: 5002
 backend_container_port: 5000
 frontend_host_port: 3000
 frontend_container_port: 3002
-docker_beckend_repo_name: eduquest-backend
+docker_backend_repo_name: eduquest-backend
 docker_frontend_repo_name: eduquest-frontend
 docker_image_tag: 1.0
 
