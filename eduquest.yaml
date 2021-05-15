@@ -10,10 +10,10 @@
       shell: service docker start
        
     - name: Deploy Eduquest backend
-      shell: docker run -dit -p {{backend_host_port}}:{{backend_container_port}} {{docker_user}}/{{docker_backend_repo_name}}:{{docker_image_tag}}
+      shell: docker run -dit -p {{ backend_host_port }}:{{ backend_container_port }} {{ docker_user }}/{{ docker_backend_repo_name }}:{{ docker_image_tag }}
     
     - name: Deploy Eduquest Frontend
-      shell: docker run -dit -p {{frontend_host_port}}:{{frontend_container_port}} {{docker_user}}/{{docker_frontend_repo_name}}:{{docker_image_tag]}    
+      shell: docker run -dit -p {{ frontend_host_port }}:{{ frontend_container_port }} {{ docker_user }}/{{ docker_frontend_repo_name }}:{{ docker_image_tag }}    
 
     - name: Deploy ELK stack using Docker
       shell:  
