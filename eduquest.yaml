@@ -1,6 +1,6 @@
 ---
 
-- name: Get all the configuration
+- name: Get all the configuratinss
   hosts: eduquest_server
   vars_files:
     - project/{{ project }}/app_config.yaml
